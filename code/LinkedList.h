@@ -1,6 +1,8 @@
 // LinkedList.h
+// Corey Hoven
+// COSC 2030
+// 9 September 2017
 
-// tom bailey   0740  5 oct 2010
 // Declaration of the List class.
 
 // A List stores and manages a sequence of doubles.
@@ -15,7 +17,7 @@
 #include <iostream>
 using std::ostream;
 
-#include "Node.cpp"
+#include "Node.h"
 
 #define ulong unsigned long
 
@@ -65,6 +67,12 @@ public:
 	// post: the first double in this List has been removed
 	//         from this List and has been returned.
 	double removeFirst();
+
+	int Size() const;
+
+	double sum();
+
+	void insertAsLast (double x);
 
 private:
 	//*** Inaccessible standard functions ***
